@@ -45,11 +45,8 @@ script/script = ExtResource( 1 )
 player_speed = 400
 jump_force = 400
 acceleration = 8
+air_acceleration = 1
 extra_gravity = 400
-
-[node name="Player_Sprite" type="Sprite" parent="Player"]
-
-texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 
@@ -82,6 +79,12 @@ enabled = true
 cast_to = Vector2( 0, 60 )
 layer_mask = 1
 type_mask = 15
+
+[node name="Rotate" type="Node2D" parent="Player"]
+
+[node name="Player_Sprite" type="Sprite" parent="Player/Rotate"]
+
+texture = ExtResource( 2 )
 
 [node name="Ground" type="StaticBody2D" parent="."]
 
