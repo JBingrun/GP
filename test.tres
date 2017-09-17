@@ -3,5 +3,5 @@
 [resource]
 
 custom_solver_bias = 0.0
-extents = Vector2( 32, 32 )
+extents = Vector2( 15, 15 )
 

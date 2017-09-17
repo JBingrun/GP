@@ -1,7 +1,7 @@
 extends Node
 
 var Col_Total = 0
-var Col_collected = 0
+var Col_Collected = 0
 
 
 func _ready():

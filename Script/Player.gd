@@ -59,6 +59,8 @@ func is_on_ground():
 		return false
 
 func _ready():
+	get_node("Camera2D").set_zoom(get_node("Camera2D").get_zoom() * get_node("/root/Global").Viewport_Scale)
+
 	raycast_down = get_node("RayCast2D")
 	raycast_down.add_exception(self)
 	print(raycast_down.get_name())
